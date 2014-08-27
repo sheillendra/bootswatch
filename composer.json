@@ -1,6 +1,8 @@
 {
-    "name": "thomaspark/bootswatch",
-    "description": "Themes for Bootstrap",
+    "name": "sheillendra/yii2-bootswatch",
+    "description": "customs Themes for Bootstrap uses for yii2",
+    "keywords": ["bootstrap", "bootswatch", "yii2", "yii", "theme"],
+    "type": "yii2-extension",
     "license": "MIT",
     "authors": [
         {
@@ -8,35 +10,13 @@
             "email": "thomas@bootswatch.com"
         }
     ],
-    "type": "component",
     "require": {
-        "robloach/component-installer": "0.0.*"
+        "yiisoft/yii2": "*",
+        "sheillendra/yii2-theme": "*"
     },
-    "extra": {
-        "component": {
-            "name": "bootswatch",
-            "files": [
-                "README.md",
-                "LICENSE",
-                "amelia/*",
-                "cerulean/*",
-                "cosmo/*",
-                "cyborg/*",
-                "darkly/*",
-                "flatly/*",
-                "fonts/*",
-                "journal/*",
-                "lumen/*",
-                "paper/*",
-                "readable/*",
-                "sandstone/*",
-                "simplex/*",
-                "slate/*",
-                "spacelab/*",
-                "superhero/*",
-                "united/*",
-                "yeti/*"
-            ]
+    "autoload": {
+        "psr-4": {
+            "sheillendra\\bootswatch\\": ""
         }
     }
 }
